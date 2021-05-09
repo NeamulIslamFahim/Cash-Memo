@@ -3,6 +3,7 @@
 #include<time.h>
 #define size 1000
 
+//Its a menu bar of the cash memo
 void Menu() {
     printf("\n");
     printf("\t******************************************************************************\n");
@@ -14,12 +15,13 @@ void Menu() {
     printf("\t*    5) Print the Cash Memo.\n\t*\n");
     printf("\t******************************************************************************\n");
 }
+//The product details (name and price)
 struct product_details{
 
     char product_name[size];
     double product_price;
 };
-
+//Inputting the name and price of the product and also the size.
 void Input_Product(struct product_details p[], int m) {
 
 
@@ -31,7 +33,7 @@ void Input_Product(struct product_details p[], int m) {
     }
     printf("\n");
 }
-
+//Displaying the products that have been selected and also the prices
 void display(struct product_details p[], int m) {
 
     double sum=0;
@@ -48,7 +50,7 @@ void display(struct product_details p[], int m) {
     printf("\tTotal:\t\t\tTK.%.2lf\n", sum);
     printf("\n\n");
 }
-
+//Deleting any of the product along with the price using the index/serial number.
 void Delete_product(struct product_details p[], int m) {
 
     printf("Enter Serial Number: ");
@@ -62,7 +64,7 @@ void Delete_product(struct product_details p[], int m) {
 
     display(p, m);
 }
-
+//Updating the product and the price
 void Update_prod(struct product_details p[], int m) {
 
     char name[100];
@@ -86,7 +88,7 @@ void Update_prod(struct product_details p[], int m) {
 
     display(p,m);
 }
-
+//The Printing CashMemo in a file
 void CashMemo(struct product_details p[], int m) {
 
     FILE *file;
@@ -114,27 +116,18 @@ void CashMemo(struct product_details p[], int m) {
         }
     fprintf(file,"============================================\n");
     fprintf(file,"Total:\t\t\tTK.%.2lf\n", sum);
-    printf("Press 1 if there is discount/offer\n");
-    printf("Press 2 if there is no discount/offer\n");
-    printf("Press(1 or 2): ");
-    scanf("%d", &x);
+    //Percentage of offer or discount
+    printf("Enter percentage of discount/offer: ");
+    scanf("%d",&y);
 
-    if(x==1) {
-        printf("Enter percentage of discount/offer: ");
-        scanf("%d",&y);
+    result = y/100.00;
+    result2 = sum-(result*sum);
+    result3 = result2*0.1;
+    result4 = result3+result2;
 
-        result = y/100.00;
-        result2 = sum-(result*sum);
-        result3 = result2*0.1;
-        result4 = result3+result2;
-
-        fprintf(file,"Discount:\t\t\t%d%\n", y);
-        fprintf(file,"Total payment:\t\tTK.%.2lf\n", result2);
-        fprintf(file,"Vat(10%%):\t\t\tTK.%.2lf\n", result4);
-    }
-    else if(x==2) {
-        fprintf(file,"No Discount\n");
-        }
+    fprintf(file,"Discount:\t\t\t%d%\n", y);
+    fprintf(file,"Total payment:\t\tTK.%.2lf\n", result2);
+    fprintf(file,"Vat(10%%):\t\t\tTK.%.2lf\n", result4);
     printf("Cash Memo is out\n\n");
     }
     fclose(file);
