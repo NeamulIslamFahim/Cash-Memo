@@ -1,0 +1,9 @@
+# depslib dependency file v1.0
+1614238256 source:c:\users\prince\desktop\cash memo\cashmemo.c
+	<stdio.h>
+
+1615728863 source:c:\users\prince\desktop\cashmemo proj\cash memo\cashmemo.c
+	<stdio.h>
+	<string.h>
+	<time.h>
+
