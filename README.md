@@ -26,7 +26,7 @@ Print the Cash Memo.
 
 -> After all, now comes the to take out the case memo. You will again get the message "Give Input" there you need to press 5. After entering number 5 , you will get two options related to discout. If there is any discount or offer, you have to click 1 and enter the amount of discount and press enter and the cash memo will be printed as a file. Ans if there is no discount or offer enter 2 and the cash memo will be printed.
 
-https://user-images.githubusercontent.com/71332807/121227750-bebeba00-c8ad-11eb-9979-d257a7bad339.mp4
+
 
 
 	                                           Some more guides:
