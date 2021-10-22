@@ -38,6 +38,3 @@ If you click any number other than 1 in the first input, you will be displayed a
 If you give any number or words other than the assigned numbers, you will get a message"No Access" and again will want you to give the input.
 
 
-#Click the link to download the file   
-
-https://drive.google.com/u/0/uc?id=1dH5rmPj0oXWnihWe0YqVMYhfsqlHl96L&export=download
