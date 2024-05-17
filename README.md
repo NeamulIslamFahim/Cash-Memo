@@ -1,40 +1,39 @@
-# Cash-Memo
-                                    Project: Cash Memo
+# Cash Memo
 
-	                            /*==================================
-      		                          Cash Memo
-	                            =================================*/
-Take number of products and Input product name and product price.
+A Cash Memo console application in C is a program designed to handle basic billing and receipt generation tasks typically used in retail or small business settings. This application captures details of purchases, calculates totals, and generates a printable receipt (cash memo) for the customer.
 
-Display the product name and product price.
+## Guide
 
-Delete the unwanted product and display.
+### Running the Program
 
-Update product and display.
+1. **Starting the Application**
+   - After running the program, you will see the message **"Give Input"**.
 
-Print the Cash Memo.
+2. **Adding Products**
+   - Enter `1` to provide the number of products, followed by the product names and their prices.
 
- 	                                          Guide:
-                                            ****************
--> After running the program, you will get a message "Give Input". There you will have to give number 1 to give the the number of products and give the product name and product price.
+3. **Viewing Products**
+   - After entering products, when the **"Give Input"** message appears again, enter `2` to see the list of products you have entered.
 
--> After that again "Give Input" message will appear, now you need to give number 2 to see the products you have entered.
+4. **Deleting a Product**
+   - When the **"Give Input"** message appears again, enter `3` if you want to delete a product.
+   - You will be prompted with **"Enter serial"**. Enter the serial number of the product you want to delete.
+   - The updated cash memo table will be displayed without the deleted item.
 
--> Then again "Give Input" message will appear; now if you want to delete any product you have to give input 3. You will get a message "Enter serial", there you need to enter the serial number of the product you want to delete. After entering the serial number , the cash memo table will be displayed, where you will not find the item which is deleted.
+5. **Updating a Product**
+   - When the **"Give Input"** message appears again, enter `4` to update a product.
+   - You will be prompted to enter the new product name, the new product price, and the serial number of the product you want to update.
+   - After entering the information, the updated cash memo table will be displayed with the updated product.
 
--> Then again "Give Input" message will appear. If you want to update any product just give input 4. There you will get the message"Enter name of the new product" ,"Enter price of the new product" and "Enter serial number you want to update". You will enter the information accordingly. Then after pressing enter button of you keyboard you wll get a cash memo display table and you will able to see the updated product.
+6. **Generating the Cash Memo**
+   - When the **"Give Input"** message appears again, enter `5` to print the cash memo.
+   - You will have two options for discount:
+     - Enter `1` to apply a discount. You will be prompted to enter the discount amount, and the cash memo will be printed as a file.
+     - Enter `2` if there is no discount. The cash memo will be printed without applying any discount.
 
--> After all, now comes the to take out the case memo. You will again get the message "Give Input" there you need to press 5. After entering number 5 , you will get two options related to discout. If there is any discount or offer, you have to click 1 and enter the amount of discount and press enter and the cash memo will be printed as a file. Ans if there is no discount or offer enter 2 and the cash memo will be printed.
+### Additional Guides
 
-https://user-images.githubusercontent.com/71332807/121227750-bebeba00-c8ad-11eb-9979-d257a7bad339.mp4
+- If you enter any number other than `1` for the first input, a blank table will be displayed.
+- If you provide any input other than the assigned numbers, you will see the message **"No Access"** and be prompted to give the input again.
 
-
-
-
-	                                           Some more guides:
-	                                        *********************
-If you click any number other than 1 in the first input, you will be displayed a blank table.
-
-If you give any number or words other than the assigned numbers, you will get a message"No Access" and again will want you to give the input.
-
-
+[Watch the demonstration video](https://user-images.githubusercontent.com/71332807/121227750-bebeba00-c8ad-11eb-9979-d257a7bad339.mp4)
